@@ -9,7 +9,7 @@
 **Author:** Ana Paula Takezawa  
 **Education:** MBA in Data Science and Artificial Intelligence — TripleTen Brasil
 
-[GitHub Profile](https://github.com/anapaula-takezawa)
+(https://my-new-repo-vbxl.onrender.com)
 
 ---
 
