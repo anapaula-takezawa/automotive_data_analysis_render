@@ -1,3 +1,9 @@
+<p align="center">
+  <img src="automotive_data_explorer_cover_under_1mb.jpg"
+       alt="Automotive Data Explorer — Interactive Data Dashboard"
+       width="100%">
+</p>
+
 # Automotive Data Explorer — Interactive Dashboard
 
 **Author:** Ana Paula Takezawa  
