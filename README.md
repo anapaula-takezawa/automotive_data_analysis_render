@@ -1,4 +1,4 @@
-<p align="center">
+ <p align="center">
   <img src="automotive_data_explorer_cover_under_1mb.jpg"
        alt="Automotive Data Explorer — Interactive Data Dashboard"
        width="100%">
@@ -9,137 +9,97 @@
 **Author:** Ana Paula Takezawa  
 **Education:** MBA in Data Science and Artificial Intelligence — TripleTen Brasil
 
-[(https://my-new-repo-vbxl.onrender.com)](https://my-new-repo-vbxl.onrender.com?utm_source=chatgpt.com)
-Live Demo: Access the Interactive Dashboard
+**Live Demo:** [Access the Interactive Dashboard](https://my-new-repo-vbxl.onrender.com)
+
 ---
 
 ## Project Overview
 
-This project consists of developing an interactive web application to explore and visualize used vehicle advertisement data from the United States.
+Automotive Data Explorer is an interactive web application designed to explore and visualize used vehicle advertisement data from the United States.
 
-Built with Python, Streamlit, and Plotly, the application provides interactive data visualizations that help users explore distributions and relationships between vehicle attributes.
+The project combines Exploratory Data Analysis (EDA), data manipulation, statistical analysis, and interactive visualization to investigate patterns and relationships in the used car market.
 
-The project was originally developed as part of the Software Development Tools module of the Data Science program at TripleTen Brasil, with a focus on applying software engineering practices to data projects.
+Developed using Python, Pandas, Plotly, and Streamlit, the application provides an interactive environment for exploring vehicle prices, characteristics, and listing trends.
+
+Originally developed as part of the Software Development Tools module of the Data Science program at TripleTen Brasil, the project was further expanded to include a comprehensive exploratory analysis notebook and an enhanced interactive dashboard.
 
 ## Project Objectives
 
-- Develop an interactive web application using Streamlit.
-- Perform exploratory data analysis (EDA).
-- Create interactive data visualizations with Plotly Express.
-- Manipulate and explore datasets using Pandas.
-- Manage Python environments and project dependencies.
-- Deploy a Python application to a cloud platform.
+- Perform Exploratory Data Analysis (EDA) on used vehicle listings.
+- Identify patterns and relationships between vehicle attributes and prices.
+- Develop an interactive dashboard using Streamlit.
+- Create data visualizations with Plotly.
+- Apply data manipulation and analysis techniques using Pandas.
+- Deploy a Python web application to a cloud platform.
+
+## Dataset
+
+The project uses a dataset containing **51,525 used vehicle advertisements** from the United States.
+
+The dataset includes information such as:
+
+- Vehicle price
+- Model and manufacturing year
+- Vehicle condition
+- Cylinder count
+- Fuel type
+- Odometer reading
+- Transmission
+- Vehicle category
+- Paint color
+- Four-wheel drive information
+- Advertisement posting date
+- Days listed
+
+The dataset is provided in the repository as `vehicles.csv`.
 
 ## Dashboard Features
 
-The application was designed to provide interactive visual exploration of vehicle advertisement data.
+The interactive dashboard allows users to explore the automotive market through filters, performance indicators, and data visualizations.
 
-Its core visualizations include:
+### Interactive Filters
 
-- **Histogram:** Explore the distribution of numerical vehicle attributes.
-- **Scatter Plot:** Investigate relationships between numerical variables.
-- **Interactive Controls:** Generate visualizations through user interactions.
+Users can filter the dataset by:
 
-## Technologies & Tools
+- Vehicle type
+- Vehicle condition
+- Fuel type
+- Transmission
+- Price range
+- Manufacturing year
 
-| Technology | Application |
-|---|---|
-| Python | Programming language |
-| Pandas | Data manipulation |
-| Plotly Express | Interactive data visualization |
-| Streamlit | Web application development |
-| Jupyter Notebook | Exploratory data analysis |
-| Git & GitHub | Version control and project management |
-| Render | Cloud deployment |
+### Key Performance Indicators (KPIs)
 
-## Project Workflow
+The dashboard displays dynamically calculated indicators:
 
-1. **Environment Setup:** Created and managed a Python virtual environment.
-2. **Data Exploration:** Loaded the dataset and performed exploratory analysis using Pandas.
-3. **Data Visualization:** Developed histograms and scatter plots using Plotly Express.
-4. **Application Development:** Built an interactive web dashboard with Streamlit.
-5. **Deployment:** Prepared and deployed the application using Render.
+- Total number of advertisements
+- Median vehicle price
+- Median manufacturing year
+- Median odometer reading
 
-## Repository Structure
+### Data Visualizations
 
-```text
-app_render/
-│
-├── README.md
-├── app.py
-├── requirements.txt
-├── vehicles_us.csv
-├── .gitignore
-│
-├── notebooks/
-│   └── EDA.ipynb
-│
-└── streamlit/
-    └── config.toml
-```
+The dashboard includes:
 
-*Note: The structure above represents the intended project organization. Adjust file names and folders to match the actual repository.*
+- **Price Distribution:** Histogram showing the distribution of vehicle prices.
+- **Price by Condition:** Comparison of median prices across vehicle conditions.
+- **Price vs. Odometer:** Scatter plot exploring the relationship between vehicle price and odometer readings.
+- **Price by Model Year:** Analysis of median prices across manufacturing years.
+- **Fuel Distribution:** Distribution of advertisements by fuel type.
+- **Vehicle Type Distribution:** Comparison of advertisement volume across vehicle categories.
+- **Monthly Listing Trends:** Number of advertisements posted over time.
 
-## How to Run Locally
+### Data Exploration
 
-Clone the repository:
+An interactive data table allows users to inspect vehicle advertisements after applying the selected filters.
 
-```bash
-git clone https://github.com/anapaula-takezawa/app_render.git
-```
+## Exploratory Data Analysis
 
-Navigate to the project directory:
+A dedicated Jupyter Notebook documents the exploratory data analysis process, including:
 
-```bash
-cd app_render
-```
-
-Create and activate a virtual environment:
-
-```bash
-python -m venv venv
-```
-
-Install the dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-Run the Streamlit application:
-
-```bash
-streamlit run app.py
-```
-
-The application will be available at:
-
-```text
-http://localhost:8501
-```
-
-## Deployment
-
-The application was developed for cloud deployment using Render.
-
-**Live Application:** Add the public Render URL here once confirmed.
-
-## Key Learnings
-
-This project provided practical experience in:
-
-- Python application development.
-- Exploratory Data Analysis.
-- Interactive data visualization.
-- Web application development with Streamlit.
-- Python environment and dependency management.
-- Version control with Git and GitHub.
-- Cloud application deployment.
-
-## Author
-
-**Ana Paula Takezawa**
-
-MBA in Data Science and Artificial Intelligence — TripleTen Brasil
-
-[GitHub](https://github.com/anapaula-takezawa)
+- Dataset inspection and structure
+- Missing value analysis
+- Data preparation and cleaning
+- Statistical summaries
+- Univariate and bivariate analysis
+- Price distribution and vehicle attribute relationships
